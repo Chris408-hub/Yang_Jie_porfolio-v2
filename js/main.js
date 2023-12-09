@@ -31,57 +31,39 @@
   });
 
 
-//about me page image animation
+  //about me page - greensock animation
   
-//     gsap.registerPlugin(ScrollTrigger);
-//     gsap.registerPlugin(ScrollToPlugin);
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollToPlugin);
 
-//   const workImg = document.querySelector(".work-image");
-//   const lifeImg = document.querySelector(".life-image");
+    const navLinks = document.querySelectorAll("#main-header nav ul li a");
 
-// gsap.to(workImg, {
-//       duration: 1, // 动画持续时间（秒）
-//       left: '0', // 将照片从右侧移动到左侧显示
-//       ease: 'power2.out' // 缓动效果，可以根据需要调整
-//     });
+    function scrollLink(e) {    
+            e.preventDefault(); 
+            console.log(e.currentTarget.hash);
+            let selectedLink = e.currentTarget.hash;
+            gsap.to(window, {duration: 1, scrollTo:{y:`${selectedLink}`, offsetY:100 }});
+    }
 
-//     // 网页滚动动画示例（假设要对整个页面的滚动添加动画）
-//     gsap.to(window, {
-//       scrollTrigger: {
-//         trigger: "#self-intro",
-//         start: 'top top',
-//         end: 'bottom bottom',
-//         scrub: true // 可以根据需要调整
-//       },
-//       // 添加滚动动画效果，例如改变背景颜色或元素位置
-//       x: "20%", ease: Bounce.easeOut// 这里是示例，可以根据需要修改
-//     });
-  
+    navLinks.forEach((link) => {
+        link.addEventListener("click", scrollLink);
+    });
 
-  
-  // gsap.to(photo, {
-  //     duration: 1, // 动画持续时间（秒）
-  //     left: '0', // 将照片从右侧移动到左侧显示
-  //     ease: 'power2.out' // 缓动效果，可以根据需要调整
-  //   });
-  
-  
-  // gsap.to(workImg, 3,
-	// 	{scrollTrigger: {
-	// 		trigger: "#self-intro",
-  //           toggleActions: "restart pause reverse none",
-  //           markers: true,
-  //           start: "top center",
-  //           end:"bottom center"
-	// 	}, 
-  //     x: "20%", ease: Bounce.easeOut
-	// 	});
-  
+    gsap.to(".self-image",3,
+      {scale: 0.5,
+      scrollTrigger: {
+			trigger: ".self-image",
+            toggleActions: "restart pause reverse none",
+            markers: true,
+            start: "top center",
+            end: "bottom center",
+            scrub: true
+		}, 
+      x: "20%", ease: Bounce.easeOut
+		});
+ 
 
-
-
-
-  //thanks page close button
+  //thanks page lightbox 
   const thanksBtn = document.querySelector('#close-btn');
   const openBtn = document.querySelector('#message-btn');
   const lightbox = document.querySelector('#thanks-light-box');

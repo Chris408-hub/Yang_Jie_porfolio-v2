@@ -1,43 +1,85 @@
 #self-intro{
-    p{
-        line-height: 30px;
-        font-size: 16px;
-        margin: 20px 50px;
-    }
+    position: relative;
+//  background: url('../images/work.png') no-repeat rgba(51, 51, 51, 0.5);
+ .self-image{
+    position: absolute;
+    max-width: 50%;
+    height: auto;
+    // width: 50%;
+    // height: 20%;
+    z-index:-333;
+    bottom:35%;
+    right:10px;
+
+ }
+
 
     div{
         max-width: 100%;
+        position: relative;
+
+           p{
+        line-height: 30px;
+        font-size: 16px;
+        margin: 20px 50px;
 
 
-        .self-image {
-            width: 30%;
-            height: 20%;
-            border-radius: 20%;
-        }
+    }
+
     
         .icon{
             width: 30px;
             height:30px;
 
         }
-    // #work{
-    //     // display: inline-block;
-    //     margin-top:30px;
-    //     {
-    //         margin-left: 25px;
-    //         width: 50%;
-    //         height: 50%;
-    //         border-radius: 50%;
-    //     }
-    // }
-    // #life{
-    //     img{
-    //         margin-left: 25px;
-    //         width: 20%;
 
-    //     }
-    // }
     }
 
 
 }
+
+@media screen and (min-width: 768px){
+#self-intro{
+
+ .self-image{
+
+
+    bottom:-15%;
+    right:10px;
+ }    
+ 
+ div{
+        max-width: 100%;
+ 
+
+           p{
+        line-height: 30px;
+        font-size: 16px;
+        margin: 20px 50px;
+
+
+    }
+
+        
+    
+        .icon{
+            width: 30px;
+            height:30px;
+
+        }
+
+
+
+    }}}
+
+    @media screen and (min-width: 1920px){
+        
+#self-intro{
+
+ .self-image{
+
+
+    bottom:-20%;
+ }    
+}}
+
