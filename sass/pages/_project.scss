@@ -6,11 +6,6 @@
 
     margin-top: 50px;
 
-    // img,
-    // h2 {
-    //     margin: 0 auto; 
-    // }
-
     h2 {
         margin-left: 10px;
     }
@@ -41,7 +36,8 @@
             }
         }
     }
-}}
+}
+}
 
 #project-gallery{
 
@@ -51,7 +47,8 @@
         background-color: rgb(175, 175, 175);
         margin: 10px auto 0;
 
-    .project{ .gallery-image{
+    .project{ 
+        .gallery-image{
         width: 100%;
         height: 100%;
         transition: transform 0.3s ease-in-out;
@@ -62,9 +59,6 @@
     }
 
     }
-
-  
-
     }
 }
 
