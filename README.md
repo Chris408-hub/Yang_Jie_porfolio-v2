@@ -1,15 +1,22 @@
-# Yang_Jie_portfolio
+# My Portfolio
 
-This is my portfolio, it shows my design and coding by my project.
+Welcome to my portfolio website! Here, I showcase my projects in coding and design.
 
-## Contributing
+## Exploring My Work
 
-Fork it! Create your feature branch: git checkout -b my-new-feature Commit your changes: git commit -am 'Add some feature' Push to the branch: git push origin my-new-feature Submit a pull request :D History
+Feel free to find detailed descriptions and examples of my projects.
 
-## Credits
+## Contact Me
 
-Jie Yang.
+If you're interested in collaborating or have any questions about my work, you can reach out to me through:
 
-## License
+- Email: yjie9093@gmail.com
+- LinkedIn: https://www.linkedin.com/in/婕-杨-41b84025a/
 
-MIT
+## Contributions and Licensing
+
+Contributions are welcome, and if you'd like to contribute, please submit a Pull Request.
+
+All projects and code are protected under relevant licensing agreements. Detailed licensing information can be found in each project's code repository or accompanying documentation.
+
+Thank you for visiting my portfolio website!
